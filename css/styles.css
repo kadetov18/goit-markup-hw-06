@@ -574,7 +574,7 @@ header {
 
 .modal-input {
   width: 100%;
-  height: 58px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 0 8px 38px;
@@ -625,6 +625,8 @@ header {
 }
 
 .model-form-button {
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -636,6 +638,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1); 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-bottom: 4px;
 }
 
 .leble-modal {
@@ -748,11 +751,21 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-footer-text);
+  width: 264px;
 }
 .footer-wrap {
   display: flex;
-  gap: 120px;
+ 
 }
+
+.footer-wrap > *:first-child {
+  margin-right: 120px;
+}
+
+.footer-wrap > *:nth-child(2) {
+  margin-right: 80px;
+}
+
 
 .logo-span-footer {
   color: var(--color-footer-text);
@@ -853,6 +866,11 @@ border-color: #404bbf;
   padding: 8px 24px 8px 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.svg-wrap {
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .footer-button span {
